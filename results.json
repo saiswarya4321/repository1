@@ -1,0 +1,289 @@
+{
+  "config": {
+    "argv": [],
+    "configFile": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\playwright.config.js",
+    "rootDir": "C:/Users/aiswa/OneDrive/Desktop/playwrightautomation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/aiswa/OneDrive/Desktop/playwrightautomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/aiswa/OneDrive/Desktop/playwrightautomation",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 40000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation",
+        "snapshotDir": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 40000,
+        "use": {
+          "browsername": "chromium",
+          "channel": "chrome",
+          "headless": false,
+          "launchOptions": {
+            "slowMo": 1000
+          },
+          "video": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "trace": "on"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "resultsDir": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.65.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\csv.spec.js",
+      "file": "tests/csv.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Formalidation-aiswarya1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-17T17:21:33.921Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\test-results\\tests-csv-Formalidation-aiswarya1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "51f8ad774dfdf334016f-5ea47797385631535604",
+          "file": "tests/csv.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Formalidation-aiswarya2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13754,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-17T17:21:49.036Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\test-results\\tests-csv-Formalidation-aiswarya2\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "51f8ad774dfdf334016f-560355a798cde984867c",
+          "file": "tests/csv.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Formalidation-aiswarya3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14330,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-17T17:22:03.632Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\test-results\\tests-csv-Formalidation-aiswarya3\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "51f8ad774dfdf334016f-72430cbc2b018c7d9fb7",
+          "file": "tests/csv.spec.js",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "Formalidation-aiswarya4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-17T17:22:18.636Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\aiswa\\OneDrive\\Desktop\\playwrightautomation\\test-results\\tests-csv-Formalidation-aiswarya4\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "51f8ad774dfdf334016f-c0f79d3c66e61fc59aa1",
+          "file": "tests/csv.spec.js",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-17T17:21:32.730Z",
+    "duration": 60710.99799999999,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

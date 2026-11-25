@@ -1,0 +1,99 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tests\pomtwo\pomtesttwo.spec.js >> pom test two
+- Location: tests\pomtwo\pomtesttwo.spec.js:8:1
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - button "Open Menu" [ref=e8] [cursor=pointer]
+          - img "Open Menu" [ref=e9]
+        - generic [ref=e10]: Swag Labs
+        - button "Cart, 1 items" [ref=e13]:
+          - generic [ref=e14]: "1"
+      - generic [ref=e15]: "Checkout: Overview"
+    - main [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: QTY
+          - generic [ref=e21]: Description
+          - generic [ref=e22]:
+            - generic [ref=e23]: "1"
+            - generic [ref=e24]:
+              - button "View details for Sauce Labs Fleece Jacket" [ref=e25] [cursor=pointer]:
+                - generic [ref=e26]: Sauce Labs Fleece Jacket
+              - generic [ref=e27]: It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.
+              - generic [ref=e28]: $49.99
+        - generic [ref=e30]:
+          - generic [ref=e31]: "Payment Information:"
+          - generic [ref=e32]: "SauceCard #31337"
+          - generic [ref=e33]: "Shipping Information:"
+          - generic [ref=e34]: Free Pony Express Delivery!
+          - generic [ref=e35]: Price Total
+          - generic [ref=e36]: "Item total: $49.99"
+          - generic [ref=e37]: "Tax: $4.00"
+          - generic [ref=e38]: "Total: $53.99"
+          - generic [ref=e39]:
+            - button "Cancel" [ref=e40] [cursor=pointer]
+            - button "Finish" [ref=e41] [cursor=pointer]
+  - contentinfo [ref=e42]:
+    - list [ref=e43]:
+      - listitem [ref=e44]:
+        - link "X" [ref=e45] [cursor=pointer]:
+          - /url: https://x.com/saucelabs
+      - listitem [ref=e46]:
+        - link "Facebook" [ref=e47] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=e48]:
+        - link "LinkedIn" [ref=e49] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=e50]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+```
+
+# Test source
+
+```ts
+  1  | const{expect}=require("@playwright/test")
+  2  | 
+  3  | class Summary{
+  4  |     constructor(page){
+  5  | this.page=page;
+  6  | this.subTotal=page.locator(".summary_total_label")
+  7  | this.finishBtn=page.getByRole('button',{name:'finish'})
+  8  |     }
+  9  | 
+  10 |     async summaryDetails(){
+  11 |         const itemTotal= this.subTotal.textContent()
+  12 |         console.log("ItemTotal",itemTotal);
+> 13 | await expect(this.itemTotal).toContain("Item total: $")
+     |                              ^ Error: expect(received).toContain(expected) // indexOf
+  14 |         
+  15 |     }
+  16 |     async finish(){
+  17 |         await this.finish.click()
+  18 |     }
+  19 | 
+  20 | }
+  21 | module.exports=Summary
+```

@@ -1,0 +1,15 @@
+Products list [
+  'Sauce Labs Backpack',
+  'Sauce Labs Bike Light',
+  'Sauce Labs Bolt T-Shirt',
+  'Sauce Labs Fleece Jacket',
+  'Sauce Labs Onesie',
+  'Test.allTheThings() T-Shirt (Red)'
+]
+No of count 6
+ItemTotal Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 19082,
+  [Symbol(trigger_async_id_symbol)]: 15739,
+  [Symbol(kResourceStore)]: undefined
+}

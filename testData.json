@@ -1,0 +1,26 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john1111@gmail.com",
+        "age": "25",
+        "salary": "50000",
+        "department": "Software Testing"
+    },
+    {
+        "firstName": "Anu",
+        "lastName": "Kumar",
+        "email": "anu1111@gmail.com",
+        "age": "28",
+        "salary": "60000",
+        "department": "QA"
+    },
+    {
+        "firstName": "Rahul",
+        "lastName": "Raj",
+        "email": "rahul1111@gmail.com",
+        "age": "30",
+        "salary": "70000",
+        "department": "Development"
+    }
+]
